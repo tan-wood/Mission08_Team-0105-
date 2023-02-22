@@ -44,7 +44,7 @@ namespace Mission08_Team_0105_.Controllers
             {
                 _taskDBContext.Add(task);
                 _taskDBContext.SaveChanges();
-                return View("ViewTasks");
+                return RedirectToAction("ViewTasks");
             }
             else
             {
