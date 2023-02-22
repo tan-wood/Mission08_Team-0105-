@@ -97,6 +97,7 @@ namespace Mission08_Team_0105_.Controllers
         public IActionResult ViewTasks()
         {
             var tasks = _taskDBContext.Tasks.Include(x => x.Category)
+                .Where(task => task.Completed == false)
                 .OrderBy(task => task.DueDate)
                 .ToList();
 
