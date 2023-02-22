@@ -71,6 +71,10 @@ namespace Mission08_Team_0105_.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("TaskText")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.HasKey("TaskId");
 
                     b.HasIndex("CategoryId");
