@@ -15,7 +15,20 @@
                 <h1>Quadrant 1</h1>
                 @if (x.Quadrant == "1")
                 {
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>@x.Category.CategoryName</td>
+                                <td>@x.TaskText</td>
+                                <td>@x.DueDate</td>
+                                <td>@x.Completed</td>
 
+                                <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskId="@x.TaskId">Edit</a></td>
+                                <td><a asp-controller="Home" asp-action="Delete" asp-route-TaskId="@x.TaskId">Delete</a></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
                 }
                 </div>
     
@@ -23,9 +36,22 @@
                 <h1>Quadrant 2 </h1>
                 @if (x.Quadrant == "2")
                 {
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>@x.Category.CategoryName</td>
+                                <td>@x.TaskText</td>
+                                <td>@x.DueDate</td>
+                                <td>@x.Completed</td>
 
+                                <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskId="@x.TaskId">Edit</a></td>
+                                <td><a asp-controller="Home" asp-action="Delete" asp-route-TaskId="@x.TaskId">Delete</a></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
                 }
-                </div>
+            </div>
  
         </div>
 
@@ -33,9 +59,22 @@
             
             <div class="col">
                 <h1>Quadrant3</h1>
-                @if (x.Quadrant == "3") 
-                { 
+                @if (x.Quadrant == "3")
+                {
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>@x.Category.CategoryName</td>
+                                <td>@x.TaskText</td>
+                                <td>@x.DueDate</td>
+                                <td>@x.Completed</td>
 
+                                <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskId="@x.TaskId">Edit</a></td>
+                                <td><a asp-controller="Home" asp-action="Delete" asp-route-TaskId="@x.TaskId">Delete</a></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
                 }
             </div>
             
@@ -44,7 +83,20 @@
                 <h1>Quadrant4</h1>
                 @if (x.Quadrant == "4")
                 {
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>@x.Category.CategoryName</td>
+                                <td>@x.TaskText</td>
+                                <td>@x.DueDate</td>
+                                <td>@x.Completed</td>
 
+                                <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskId="@x.TaskId">Edit</a></td>
+                                <td><a asp-controller="Home" asp-action="Delete" asp-route-TaskId="@x.TaskId">Delete</a></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
                 }
             </div>
         </div>
