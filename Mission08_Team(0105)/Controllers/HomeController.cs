@@ -29,7 +29,7 @@ namespace Mission08_Team_0105_.Controllers
         [HttpGet]
         public IActionResult AddTask()
         {
-            ViewBag.Tasks = _taskDBContext.Tasks.ToList();
+            ViewBag.Tasks = _taskDBContext.Categories.ToList();
 
             return View();
         }
@@ -57,7 +57,7 @@ namespace Mission08_Team_0105_.Controllers
         [HttpGet]
         public IActionResult Edit(int TaskId)
         {
-            ViewBag.Tasks = _taskDBContext.Tasks.ToList();
+            ViewBag.Tasks = _taskDBContext.Categories.ToList();
 
 
             var task = _taskDBContext.Tasks.Single(task => task.TaskId == TaskId);
