@@ -88,7 +88,7 @@ namespace Mission08_Team_0105_.Migrations
                             Completed = false,
                             DueDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Quadrant = 1,
-                            TaskText = ""
+                            TaskText = "Mission8"
                         });
                 });
 

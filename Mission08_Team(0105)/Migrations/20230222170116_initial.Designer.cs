@@ -9,7 +9,7 @@ using Mission08_Team_0105_.Models;
 namespace Mission08_Team_0105_.Migrations
 {
     [DbContext(typeof(TaskDBContext))]
-    [Migration("20230222163413_initial")]
+    [Migration("20230222170116_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -90,7 +90,7 @@ namespace Mission08_Team_0105_.Migrations
                             Completed = false,
                             DueDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Quadrant = 1,
-                            TaskText = ""
+                            TaskText = "Mission8"
                         });
                 });
 

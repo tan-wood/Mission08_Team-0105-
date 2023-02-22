@@ -66,7 +66,7 @@ namespace Mission08_Team_0105_.Migrations
             migrationBuilder.InsertData(
                 table: "Tasks",
                 columns: new[] { "TaskId", "CategoryId", "Completed", "DueDate", "Quadrant", "TaskText" },
-                values: new object[] { 1, 1, false, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "" });
+                values: new object[] { 1, 1, false, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "Mission8" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Tasks_CategoryId",

@@ -53,7 +53,7 @@ namespace Mission08_Team_0105_.Models
 				new TaskModel
 				{
 					TaskId = 1,
-					TaskText = "",
+					TaskText = "Mission8",
 					CategoryId = 1,
 					DueDate = new DateTime(),
 					Completed = false,
