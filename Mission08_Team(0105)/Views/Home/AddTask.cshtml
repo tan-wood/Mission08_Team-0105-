@@ -14,20 +14,20 @@
         <label asp-for="CategoryId">Category:</label>
         <select asp-for="CategoryId">
             <option value="">Select a Category</option>
-            @foreach (TaskModel t in ViewBag.Tasks)
+            @foreach (CategoryModel c in ViewBag.Tasks)
             {
-            <option value="@t.CategoryId">@t.Category.CategoryName</option>
+            <option value="@c.CategoryId">@c.CategoryName</option>
             }
         </select><br />
 
         <label asp-for="TaskText">Task Text:</label>
-        <input asp-for="TaskText" /> <br />
+        <input asp-for="TaskText"  /> <br />
 
         <label asp-for="DueDate">Due Date:</label>
         <input asp-for="DueDate" /> <br />
 
         <label asp-for="Quadrant">Quadrant:</label>
-        <input asp-for="Quadrant" /> <br />
+        <input asp-for="Quadrant" min="1" max="4"/> <br />
 
         <label asp-for="Completed">Completed:</label>
         <select asp-for="Completed">

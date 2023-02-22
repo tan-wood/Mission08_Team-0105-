@@ -9,7 +9,7 @@ using Mission08_Team_0105_.Models;
 namespace Mission08_Team_0105_.Migrations
 {
     [DbContext(typeof(TaskDBContext))]
-    [Migration("20230222161513_initial")]
+    [Migration("20230222163413_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -69,9 +69,8 @@ namespace Mission08_Team_0105_.Migrations
                     b.Property<DateTime>("DueDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Quadrant")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Quadrant")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("TaskText")
                         .IsRequired()
@@ -82,6 +81,17 @@ namespace Mission08_Team_0105_.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Tasks");
+
+                    b.HasData(
+                        new
+                        {
+                            TaskId = 1,
+                            CategoryId = 1,
+                            Completed = false,
+                            DueDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Quadrant = 1,
+                            TaskText = ""
+                        });
                 });
 
             modelBuilder.Entity("Mission08_Team_0105_.Models.TaskModel", b =>

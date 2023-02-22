@@ -11,20 +11,28 @@
 
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col border">
                 <h1>Quadrant 1</h1>
-                @if (x.Quadrant == "1")
+                @if (x.Quadrant == 1)
                 {
-                    <table>
+                    <table class="table table-bordered table-dark table-striped">
                         <tbody>
+                            <tr>
+                                <th>Category</th>
+                                <th>Task</th>
+                                <th>Due Date</th>
+                                <th>Completed</th>
+                                <th>Action</th>
+
+                            </tr>
                             <tr>
                                 <td>@x.Category.CategoryName</td>
                                 <td>@x.TaskText</td>
                                 <td>@x.DueDate</td>
                                 <td>@x.Completed</td>
 
-                                <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskId="@x.TaskId">Edit</a></td>
-                                <td><a asp-controller="Home" asp-action="Delete" asp-route-TaskId="@x.TaskId">Delete</a></td>
+                                <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskId="@x.TaskId">Edit</a><br /><a asp-controller="Home" asp-action="Delete" asp-route-TaskId="@x.TaskId">Delete</a></td>
+                                
 
                             </tr>
                         </tbody>
@@ -32,20 +40,28 @@
                 }
                 </div>
     
-            <div class="col">
+            <div class="col border">
                 <h1>Quadrant 2 </h1>
-                @if (x.Quadrant == "2")
+                @if (x.Quadrant == 2)
                 {
-                    <table>
+                    <table class="table table-bordered table-dark table-striped">
                         <tbody>
+                            <tr>
+                                <th>Category</th>
+                                <th>Task</th>
+                                <th>Due Date</th>
+                                <th>Completed</th>
+                                <th>Action</th>
+
+                            </tr>
                             <tr>
                                 <td>@x.Category.CategoryName</td>
                                 <td>@x.TaskText</td>
                                 <td>@x.DueDate</td>
                                 <td>@x.Completed</td>
 
-                                <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskId="@x.TaskId">Edit</a></td>
-                                <td><a asp-controller="Home" asp-action="Delete" asp-route-TaskId="@x.TaskId">Delete</a></td>
+                                <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskId="@x.TaskId">Edit</a><br /><a asp-controller="Home" asp-action="Delete" asp-route-TaskId="@x.TaskId">Delete</a></td>
+
 
                             </tr>
                         </tbody>
@@ -57,20 +73,28 @@
 
         <div class="row">
             
-            <div class="col">
+            <div class="col border">
                 <h1>Quadrant3</h1>
-                @if (x.Quadrant == "3")
+                @if (x.Quadrant == 3)
                 {
-                    <table>
+                    <table class="table table-bordered table-dark table-striped">
                         <tbody>
+                            <tr>
+                                <th>Category</th>
+                                <th>Task</th>
+                                <th>Due Date</th>
+                                <th>Completed</th>
+                                <th>Action</th>
+
+                            </tr>
                             <tr>
                                 <td>@x.Category.CategoryName</td>
                                 <td>@x.TaskText</td>
                                 <td>@x.DueDate</td>
                                 <td>@x.Completed</td>
 
-                                <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskId="@x.TaskId">Edit</a></td>
-                                <td><a asp-controller="Home" asp-action="Delete" asp-route-TaskId="@x.TaskId">Delete</a></td>
+                                <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskId="@x.TaskId">Edit</a><br /><a asp-controller="Home" asp-action="Delete" asp-route-TaskId="@x.TaskId">Delete</a></td>
+
 
                             </tr>
                         </tbody>
@@ -79,20 +103,28 @@
             </div>
             
 
-            <div class="col">
+            <div class="col border">
                 <h1>Quadrant4</h1>
-                @if (x.Quadrant == "4")
+                @if (x.Quadrant == 4)
                 {
-                    <table>
+                    <table class="table table-bordered table-dark table-striped">
                         <tbody>
+                            <tr>
+                                <th>Category</th>
+                                <th>Task</th>
+                                <th>Due Date</th>
+                                <th>Completed</th>
+                                <th>Action</th>
+
+                            </tr>
                             <tr>
                                 <td>@x.Category.CategoryName</td>
                                 <td>@x.TaskText</td>
                                 <td>@x.DueDate</td>
                                 <td>@x.Completed</td>
 
-                                <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskId="@x.TaskId">Edit</a></td>
-                                <td><a asp-controller="Home" asp-action="Delete" asp-route-TaskId="@x.TaskId">Delete</a></td>
+                                <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskId="@x.TaskId">Edit</a><br /><a asp-controller="Home" asp-action="Delete" asp-route-TaskId="@x.TaskId">Delete</a></td>
+
 
                             </tr>
                         </tbody>

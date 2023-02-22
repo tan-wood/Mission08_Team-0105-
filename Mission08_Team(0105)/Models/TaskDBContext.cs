@@ -49,7 +49,17 @@ namespace Mission08_Team_0105_.Models
 
 
 				);
-			
+			mb.Entity<TaskModel>().HasData(
+				new TaskModel
+				{
+					TaskId = 1,
+					TaskText = "",
+					CategoryId = 1,
+					DueDate = new DateTime(),
+					Completed = false,
+					Quadrant = 1,
+				}
+				);
 
 
 		}

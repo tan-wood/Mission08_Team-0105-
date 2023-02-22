@@ -15,7 +15,7 @@ namespace Mission08_Team_0105_.Models
         public string TaskText { get; set; }
         public DateTime DueDate { get; set; }
         [Required]
-        public string Quadrant { get; set; }
+        public int Quadrant { get; set; }
         //foreign key
         public int CategoryId { get; set; }
         public CategoryModel Category { get; set; }
