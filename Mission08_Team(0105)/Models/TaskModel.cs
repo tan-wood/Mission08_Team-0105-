@@ -11,6 +11,8 @@ namespace Mission08_Team_0105_.Models
         [Key]
         [Required]
         public int TaskId { get; set; }
+        [Required]
+        public string TaskText { get; set; }
         public DateTime DueDate { get; set; }
         [Required]
         public string Quadrant { get; set; }
