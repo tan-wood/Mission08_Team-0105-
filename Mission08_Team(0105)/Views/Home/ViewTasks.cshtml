@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "View Tasks";
+}
+
+@model List<TaskModel>
+
+
+@foreach (var x in Model)
+{
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Quadrant 1</h1>
+                @if (x.Quadrant == "1")
+                {
+
+                }
+                </div>
+    
+            <div class="col">
+                <h1>Quadrant 2 </h1>
+                @if (x.Quadrant == "2")
+                {
+
+                }
+                </div>
+ 
+        </div>
+
+        <div class="row">
+            
+            <div class="col">
+                <h1>Quadrant3</h1>
+                @if (x.Quadrant == "3") 
+                { 
+
+                }
+            </div>
+            
+
+            <div class="col">
+                <h1>Quadrant4</h1>
+                @if (x.Quadrant == "4")
+                {
+
+                }
+            </div>
+        </div>
+    </div>
+}
