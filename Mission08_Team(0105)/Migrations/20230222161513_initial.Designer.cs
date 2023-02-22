@@ -9,8 +9,8 @@ using Mission08_Team_0105_.Models;
 namespace Mission08_Team_0105_.Migrations
 {
     [DbContext(typeof(TaskDBContext))]
-    [Migration("20230221185714_Initail")]
-    partial class Initail
+    [Migration("20230222161513_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -70,6 +70,10 @@ namespace Mission08_Team_0105_.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Quadrant")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("TaskText")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
