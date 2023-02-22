@@ -2,7 +2,7 @@
     ViewData["Title"] = "Add Task";
 }
 
-@model Mission08_Team(0105).Models.TaskModel
+@model TaskModel
 
 <h1>Add Task</h1>
 
@@ -14,9 +14,9 @@
         <label asp-for="CategoryId">Category:</label>
         <select asp-for="CategoryId">
             <option value="">Select a Category</option>
-            @foreach (Task t in ViewBag.Tasks)
+            @foreach (TaskModel t in ViewBag.Tasks)
             {
-            <option value="@t.CategoryId">@t.CategoryName</option>
+            <option value="@t.CategoryId">@t.Category.CategoryName</option>
             }
         </select><br />
 
